@@ -23,10 +23,17 @@
 
 </head>
 <body>
+<script src="popup.js"></script>
 
-    <h1 class="title">Youtube Downloader</h1>
-    <p id="status"> </p>
-    <button type="button" onclick=GetURL()> Get URL </button>
+<h1>Youtube Downloader</h1>
+<label for="format">Format</label>
+<select id="format">
+    <option value="mp4">MP4</option>
+    <option value="wmv">WMV</option>
+    <option value="avi">AVI</option>
+    <option value="mp3">MP3</option>
+</select>
+<button id="download">Download</button>
 
 </body>
 </html>
