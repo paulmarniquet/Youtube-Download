@@ -1,0 +1,32 @@
+{
+  "description": "Youtube Downloader Addon",
+  "manifest_version": 2,
+  "name": "Youtube Download",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+
+  "page_action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Youtube Download"
+  },
+
+  "background" : {
+    "scripts" : ["background.js"],
+    "persistent" : false
+  },
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "downloads",
+    "activeTab",
+    "declarativeContent"
+  ]
+}
